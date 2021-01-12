@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="8dp"
+    tools:context=".ui.gallery.SettingFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="16dp"
+        android:text="@string/settings"
+        android:textColor="@color/purple_700"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/username_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/current_username"
+        android:layout_marginVertical="4dp"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/no_of_patient_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/current_number_of_added_patient"
+        android:layout_marginVertical="4dp"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/max_patient_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/maximum_number_of_patient_allowed"
+        android:layout_marginVertical="4dp"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center_horizontal"/>
+
+</LinearLayout>
